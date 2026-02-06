@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <span class="logo">My Creation</span>
+        <button id="theme-toggle" class="btn-main">Switch Theme</button>
+    </nav>
+    <header class="hero">
+        <h1>Welcome</h1>
+        <p>This is a Landing Page</p>
+        <button class="btn-main">Get Started</button>
+    </header>
+    <section class="grid">
+        <div class="card">
+            <h3>Point 1 </h3>
+            <p>My name is Manan Jain.</p>
+        </div>
+        <div class="card">
+            <h3>Point Two</h3>
+            <p>I AM PURSUING BTECH.</p>
+        </div>
+    </section>
+    <footer>
+        <p>CSS ROOT</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('theme-toggle');
+        btn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+        });
+    </script>
+</body>
+</html>
